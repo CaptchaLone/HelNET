@@ -18,7 +18,7 @@ pip install -r requirements.txt
 wget https://nvidia.box.com/shared/static/djf5w54rjvpqocsiztzaandq1m3avr7c.pth -O   models/mobilenet-v1-ssd-mp-0_675.pth
 pip3 install -v -r requirements.txt
 ```
-5. Open Visual Studios Code and drag the helmet detection model to /home/nvidia/jetson-inference/python/training/detection/ssd/models
+5. Open Visual Studios Code and drag the helmet detection model to /home/nvidia/jetson-inference/python/training/detection/ssd/models/helmet
 6. Then run the following code to start the live camera:
 ```
 cd jetson-inference/python/training/detection/ssd
