@@ -18,13 +18,12 @@ pip install -r requirements.txt
 wget https://nvidia.box.com/shared/static/djf5w54rjvpqocsiztzaandq1m3avr7c.pth -O   models/mobilenet-v1-ssd-mp-0_675.pth
 pip3 install -v -r requirements.txt
 ```
-5. Then run the following code to start the live camera:
+5. Open Visual Studios Code and drag the helmet detection model to /home/nvidia/jetson-inference/python/training/detection/ssd/models
+6. Then run the following code to start the live camera:
 ```
 cd jetson-inference/python/training/detection/ssd
 detectnet --model=models/helmet/ssd-mobilenet.onnx --labels=models/helmet/labels.txt \
           --input-blob=input_0 --output-cvg=scores --output-bbox=boxes \
           v4l2:///dev/video0
 ```
-7. You should see a video popup of your face. 
-8. The model is up and running, and so you should just put your face (and helmet?) in clear view infront of the camera and watch as it tries to detect whether the helmet is there or not!
-
+7. The model is up and running, and so you should just put your face (and helmet?) in clear view infront of the camera and watch as it tries to detect whether the helmet is there or not!
