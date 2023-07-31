@@ -1,6 +1,6 @@
 ## Helmet Detection Model
 
-This model is used to detect whether a person had helmets on or not. It is trained using PyTorch and the Open Images dataset. The idea is that if the model detects a person going into a contruction site without a helmet the program would warn the person.
+This model is used to detect whether a person had a helmet on or not. It is trained using PyTorch and the Open Images dataset. The idea is that if the model detects a person going into a contruction site without a helmet the program would warn the person.
 
 
 ## The Algorithm
