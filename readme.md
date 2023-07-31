@@ -18,8 +18,13 @@ pip install -r requirements.txt
 wget https://nvidia.box.com/shared/static/djf5w54rjvpqocsiztzaandq1m3avr7c.pth -O   models/mobilenet-v1-ssd-mp-0_675.pth
 pip3 install -v -r requirements.txt
 ```
-5. Then run the following code - $ python3 final_project2.py --network=facenet (webcam name here)
-6. You should see a video popup of your face. Note how it is not a smooth stream of images. It should be a headshot of you and your face, and there should be some blakc space.
-7. The model is up and running, and so you should just put your face in clear view infront of the camera and watch as it tries to predict your age!
+5. Then run the following code to start the live camera:
+```
+cd jetson-inference/python/training/detection/ssd
+detectnet --model=models/helmet/ssd-mobilenet.onnx --labels=models/helmet/labels.txt \
+          --input-blob=input_0 --output-cvg=scores --output-bbox=boxes \
+          v4l2:///dev/video0
+```
+7. You should see a video popup of your face. 
+8. The model is up and running, and so you should just put your face (and helmet?) in clear view infront of the camera and watch as it tries to detect whether the helmet is there or not!
 
-[View a video explanation here](video link)
