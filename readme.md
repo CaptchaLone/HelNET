@@ -27,3 +27,6 @@ detectnet --model=models/helmet/ssd-mobilenet.onnx --labels=models/helmet/labels
           v4l2:///dev/video0
 ```
 7. The model is up and running, and so you should just put your face (and helmet?) in clear view infront of the camera and watch as it tries to detect whether the helmet is there or not!
+
+THE COLAB LINK:
+https://colab.research.google.com/drive/12jN-6tQ1KnZoGE5cQJy5T5jOJwaKbrG5#scrollTo=eo3hVo4myykM
