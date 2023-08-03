@@ -30,3 +30,5 @@ detectnet --model=models/helmet/ssd-mobilenet.onnx --labels=models/helmet/labels
 
 THE COLAB LINK:
 https://colab.research.google.com/drive/12jN-6tQ1KnZoGE5cQJy5T5jOJwaKbrG5#scrollTo=eo3hVo4myykM
+THE LINK TO THE VIDEO:
+https://youtu.be/Xv8A5WJOOEA
